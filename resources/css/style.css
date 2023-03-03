@@ -1,4 +1,8 @@
+. {
+    background-color: darkseagreen;
+}
+
 h1 {
     text-align: center;
-    color: blue;
+    color: rgb(215, 86, 39);
 }
