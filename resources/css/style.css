@@ -45,7 +45,7 @@ body {
   
 .left li+li::before {
     color: black;
-    content: ">>";
+    content: "\01F81E";
     padding: 0 10px;
 }
   
