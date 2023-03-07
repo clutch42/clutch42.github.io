@@ -1,13 +1,10 @@
-* {
-    background-color: darkseagreen;
-}
 
 h1 {
     text-align: center;
-    color: rgb(215, 86, 39);
+    color: black;
 }
 header {
-    background-color: #466995;
+    background-color: darkgray;
     border-bottom: 1px solid black;
     position: fixed;
     top: 0px;
@@ -15,9 +12,8 @@ header {
     z-index: 0;
   }
 ul {
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 0 20px;
-    text-align: center;
 }
   
 li {
@@ -25,13 +21,20 @@ li {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    text-transform: uppercase;
-    display: inline-block;
+    display: inline;
     width: 80px;  
+    padding: 0 20px;
 }
 body {
+    background-color: lightgray;
     margin: 0px;
     height: 800px;
     position: relative;
     top: 98px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
 }
