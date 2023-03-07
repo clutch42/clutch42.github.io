@@ -10,16 +10,17 @@ header {
     background-color: #466995;
     border-bottom: 1px solid black;
     position: fixed;
+    top: 0px;
     width: 100%;
     z-index: 0;
   }
-  ul {
+ul {
     margin: 30px auto;
     padding: 0 20px;
     text-align: center;
-  }
+}
   
-  li {
+li {
     color: #FFF;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -27,4 +28,10 @@ header {
     text-transform: uppercase;
     display: inline-block;
     width: 80px;  
-  }
+}
+body {
+    margin: 0px;
+    height: 800px;
+    position: relative;
+    top: 98px;
+}
