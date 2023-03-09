@@ -102,6 +102,7 @@ body {
     background-size: cover;
 }
 .containerForCard {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,6 +132,7 @@ body {
 .projectdiv li {
     width: 80%;
     border: 2px black solid;
+    background-color: darkgray;
     list-style-type: none;
     display: inline-flex;
     justify-content: space-around;
