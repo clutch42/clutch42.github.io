@@ -24,25 +24,26 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
+    z-index: 1;
 }
 
 /* Side Margins with Color */
-.container::before, .container::after {
+body::before, body::after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 20px; /* Adjust as needed */
-    background-color: #007bff; /* Side margin color */
+    width: 15vw; /* Width of side margins (adjust as needed) */
+    background-color: #007bff; /* Color for side margins */
     z-index: -1;
 }
 
-.container::before {
-    left: -20px; /* Moves the left margin to the left */
+body::before {
+    left: 0; /* Left side margin */
 }
 
-.container::after {
-    right: -20px; /* Moves the right margin to the right */
+body::after {
+    right: 0; /* Right side margin */
 }
 
 /* Headings */
