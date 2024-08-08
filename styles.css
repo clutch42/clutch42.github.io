@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #e9ecef;
     color: #333;
 }
 
@@ -21,8 +21,28 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+}
+
+/* Side Margins with Color */
+.container::before, .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px; /* Adjust as needed */
+    background-color: #007bff; /* Side margin color */
+    z-index: -1;
+}
+
+.container::before {
+    left: -20px; /* Moves the left margin to the left */
+}
+
+.container::after {
+    right: -20px; /* Moves the right margin to the right */
 }
 
 /* Headings */
