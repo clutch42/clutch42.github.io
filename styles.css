@@ -18,18 +18,18 @@ body {
 /* Margin Container Styles */
 .margin-container {
     position: relative;
-    padding: 0 5vw; /* Padding on both sides for colored margins */
+    padding: 0 20%; /* Padding on both sides to create space */
     background-color: #007bff; /* Blue background for side margins */
 }
 
 /* Content Styles */
-.content {
-    max-width: 800px;
-    margin: 0 auto; /* Center container */
+.container {
     padding: 20px;
     background-color: #fff; /* White background for the content */
-    border-radius: 8px;
+    margin: 0 auto; /* Center container */
+    max-width: 100%; /* Ensure container takes full width minus padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -76,7 +76,13 @@ p {
 /* Iframes */
 iframe {
     display: block;
-    margin: 20px auto;
     border: none;
-    max-width: 100%;
+    max-width: 100%; /* Ensure iframes don’t exceed container width */
+    margin: 20px auto;
+}
+
+/* Specific iframe for PDF */
+iframe.pdf {
+    width: 100%; /* Make the PDF iframe take the full width of its container */
+    height: 600px; /* Adjust height as needed */
 }
