@@ -9,42 +9,28 @@ body, h1, h2, p, a, iframe {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding: 20px;
-    background-color: #e9ecef;
+    background-color: #e9ecef; /* Light gray background for the whole page */
     color: #333;
-    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-/* Container Styles */
-.container {
+/* Margin Container Styles */
+.margin-container {
+    position: relative;
+    padding: 0 5vw; /* Padding on both sides for colored margins */
+    background-color: #007bff; /* Blue background for side margins */
+}
+
+/* Content Styles */
+.content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center container */
     padding: 20px;
-    background-color: #fff;
+    background-color: #fff; /* White background for the content */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-/* Side Margins with Color */
-body::before, body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 25vw; /* Width of side margins (adjust as needed) */
-    background-color: #007bff; /* Color for side margins */
-    z-index: -1;
-}
-
-body::before {
-    left: 0; /* Left side margin */
-}
-
-body::after {
-    right: 0; /* Right side margin */
 }
 
 /* Headings */
@@ -93,28 +79,4 @@ iframe {
     margin: 20px auto;
     border: none;
     max-width: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
 }
