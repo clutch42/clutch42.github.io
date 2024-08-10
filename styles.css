@@ -53,6 +53,22 @@ p {
     margin-bottom: 20px;
 }
 
+/* Paragraphs and Lists */
+.container p, .container ul {
+    text-align: left; /* Left-align text in paragraphs and lists */
+    margin: 0 auto; /* Center the block element itself */
+    width: 100%; /* Full width of container */
+    max-width: 800px; /* Adjust as needed */
+}
+
+.container ul {
+    padding-left: 20px; /* Indent list items */
+}
+
+.container li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
 /* Button Styles */
 .button {
     display: inline-block;
