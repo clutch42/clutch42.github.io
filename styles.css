@@ -1,5 +1,5 @@
 /* Basic Reset */
-body, h1, h2, p, a, iframe {
+body, h1, h2, p, a, iframe, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,7 +47,7 @@ h2 {
 }
 
 /* Paragraphs */
-p {
+p, li {
     font-size: 1.1em;
     color: #666;
     margin-bottom: 20px;
