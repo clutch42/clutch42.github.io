@@ -9,39 +9,54 @@
         <div class="container">
             <h1>Software Design and Engineering</h1>
             <h2>Code Review: Computational Graphics and Visualization in OpenGL</h2>
-            <p>This section features a detailed code review of the Computational Graphics and Visualization project. The review highlights key aspects of the codebase, including its structure, functionality, and potential improvements. Watch the video below to gain insights into the code’s strengths and weaknesses.</p>
+            <p>This section features a detailed code review of the Computational Graphics and Visualization project. The review highlights key aspects of the 
+                codebase, including its structure, functionality, and potential improvements. Watch the video below to gain insights into the code’s strengths and weaknesses.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FwYsATmVzxY" frameborder="0" allowfullscreen></iframe>
             <h2>Before and After: Enhancements to the Code</h2>
-            <p>Hightlights the key improvements made to the project by comparing the initial and enhanced versions. The links below provide access to the original code and the updated version with class functionality and headers.</p>
+            <p>Hightlights the key improvements made to the project by comparing the initial and enhanced versions. The links below provide access to the original 
+                code and the updated version with class functionality and headers.</p>
             <a href="https://github.com/clutch42/CS-499-Capstone/tree/main/CS_330_Project" target="_blank" class="button">CS 330 Project</a>
             <a href="https://github.com/clutch42/CS-499-Capstone/tree/main/CS_330_Project_Enhanced" target="_blank" class="button">CS 330 Enhanced Project</a>
-            <h2>Project Narrative: Enhancing Code Readability</h2>
-            <p><strong>Artifact Description:</strong> This project from CS 330: Computational Graphics and Visualization, completed in Fall 2023, demonstrates the use of OpenGL and C++ to create a dynamic 3D scene with advanced textures, lighting, and shading techniques.</p>
-            <p><strong>Justification for Inclusion:</strong> Despite achieving its initial goals, the project's original code structure was disorganized, with all vertex and index generators located in a single .cpp file. This setup made the code hard to manage and extend.</p>
-            <p><strong>Improvements and Enhancements:</strong> Significant improvements were made by refactoring the code to move vertex and index generators into separate header files. Each shape was encapsulated into its own class, enhancing readability and security. Constructors for varying shape sizes were added, providing more flexibility for future expansions.</p>
+            <h2>Project Narrative: Enhancing Code Readability and Structure</h2>
+            <p><strong>Artifact Description:</strong> This project from CS 330: Computational Graphics and Visualization, completed in Fall 2023, demonstrates the 
+                use of OpenGL and C++ to create a dynamic 3D scene with advanced textures, lighting, and shading techniques.</p>
+            <p><strong>Justification for Inclusion:</strong> Despite achieving its initial goals, the project's original code structure was disorganized, with all 
+                vertex and index generators located in a single .cpp file. This setup made the code hard to manage and extend.</p>
+            <p><strong>Improvements and Enhancements:</strong> Significant improvements were made by refactoring the code to move vertex and index generators into 
+                separate header files. Each shape was encapsulated into its own class, enhancing readability and security. Constructors for varying shape sizes were 
+                added, providing more flexibility for future expansions.</p>
             
             <h2>Course Outcomes</h2>
             <p>The enhancements made to this project effectively met the following course outcomes:</p>
             <ul>
                 <li>
-                    <strong>Employ strategies for building collaborative environments:</strong> This was demonstrated by creating separate header files and classes for the vertex and index creation functions. The encapsulation of these functions into self-contained classes with private variables and public getters enables easy use by others and supports collaborative development.
+                    <strong>Employ strategies for building collaborative environments:</strong> This was demonstrated by creating separate header files and classes for 
+                    the vertex and index creation functions. The encapsulation of these functions into self-contained classes with private variables and public getters 
+                    enables easy use by others and supports collaborative development.
                 </li>
                 <li>
-                    <strong>Design, develop, and deliver professional-quality communications:</strong> This outcome is showcased through the detailed code review and narrative provided with the artifact. These documents offer coherent, technically sound insights into the project and its enhancements.
+                    <strong>Design, develop, and deliver professional-quality communications:</strong> This outcome is showcased through the detailed code review and narrative 
+                    provided with the artifact. These documents offer coherent, technically sound insights into the project and its enhancements.
                 </li>
                 <li>
-                    <strong>Design and evaluate computing solutions using algorithmic principles and standards:</strong> This is illustrated by the use of classes in the project. While adding some overhead, this approach improves code readability and reusability compared to simply moving functions to header files.
+                    <strong>Design and evaluate computing solutions using algorithmic principles and standards:</strong> This is illustrated by the use of classes in the 
+                    project. While adding some overhead, this approach improves code readability and reusability compared to simply moving functions to header files.
                 </li>
                 <li>
-                    <strong>Demonstrate the use of innovative techniques and tools in computing:</strong> The project’s improvements, such as the creation of reusable classes, exemplify the use of well-founded techniques and tools to deliver valuable solutions.
+                    <strong>Demonstrate the use of innovative techniques and tools in computing:</strong> The project’s improvements, such as the creation of reusable classes, 
+                    exemplify the use of well-founded techniques and tools to deliver valuable solutions.
                 </li>
                 <li>
-                    <strong>Develop a security mindset:</strong> By replacing public global variables with private variables and getters, the project enhances data and resource security, addressing potential vulnerabilities and design flaws.
+                    <strong>Develop a security mindset:</strong> By replacing public global variables with private variables and getters, the project enhances data and resource 
+                    security, addressing potential vulnerabilities and design flaws.
                 </li>
             </ul>
             
             <h2>Reflection on the Process</h2>
-            <p>The project highlighted the importance of modular design and class encapsulation in managing complex systems. These improvements made the codebase easier to understand and extend. Future projects will benefit from more thorough initial planning to avoid structural issues. The choice between retaining the scaling method or adopting new instances proved challenging, but the current setup allows flexibility for future developments. Additionally, refactoring has removed magic numbers and replaced global variables with named constants, resulting in a cleaner codebase.</p>
+            <p>The project highlighted the importance of modular design and class encapsulation in managing complex systems. These improvements made the codebase easier to 
+                understand and extend. Future projects will benefit from more thorough initial planning to avoid structural issues. The choice between retaining the scaling 
+                method or adopting new instances proved challenging, but the current setup allows flexibility for future developments. Additionally, refactoring has removed 
+                magic numbers and replaced global variables with named constants, resulting in a cleaner codebase.</p>
             
             <iframe src="CS-499-Software-Design-and-Engineering-Narrative.pdf" class="pdf"></iframe>
             <a href="index.html" class="button">Back to Home</a>
