@@ -1,5 +1,5 @@
 /* Basic Reset */
-body, h1, h2, p, a, iframe, li {
+body, h1, h2, h3, p, a, iframe, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,6 +42,12 @@ h1 {
 
 h2 {
     font-size: 1.8em;
+    color: #0056b3;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.4em;
     color: #0056b3;
     margin: 20px 0;
 }
