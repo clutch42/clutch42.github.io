@@ -50,13 +50,13 @@ h2 {
 p, li {
     font-size: 1.1em;
     color: #666;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 /* Paragraphs and Lists */
 .container p, .container ul {
     text-align: left; /* Left-align text in paragraphs and lists */
-    margin: 0 auto; /* Center the block element itself */
+    margin: 0 auto 20px; /* Center the block element itself */
     width: 100%; /* Full width of container */
     max-width: 800px; /* Adjust as needed */
 }
