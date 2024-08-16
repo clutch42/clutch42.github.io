@@ -24,12 +24,6 @@ body {
     font-weight: bold;
 }
 
-/* Navigation Container */
-.nav-container {
-    width: 100%;
-    position: relative;
-}
-
 /* Navigation Bar */
 .navbar {
     background-color: #fff;
