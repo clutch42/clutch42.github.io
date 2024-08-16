@@ -5,6 +5,14 @@ body, h1, h2, h3, p, a, iframe, li {
     box-sizing: border-box;
 }
 
+/* Paragraphs */
+p, li {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
@@ -66,6 +74,7 @@ body {
 
 
 .navbar-item {
+    margin: 0;
     flex: none; 
 }
 
@@ -118,17 +127,6 @@ h3 {
 
 .title-banner h2 {
     color: #ffffff; 
-}
-
-/* Paragraphs */
-p, li {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.navbar-item li {
-    margin-bottom: 0;
 }
 
 /* Paragraphs and Lists */
