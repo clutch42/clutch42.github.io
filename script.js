@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const titleBanner = document.querySelector('.title-banner');
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.nav-container');
     const titleBannerHeight = titleBanner.offsetHeight;
 
     window.addEventListener('scroll', function () {
