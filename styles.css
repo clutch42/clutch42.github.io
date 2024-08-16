@@ -70,8 +70,7 @@ body {
 }
 
 .navbar-item {
-    flex: 1; /* Ensure items take up equal space */
-    text-align: center; /* Center text within items */
+    flex: none; /* Ensure items take up equal space */
 }
 
 .navbar-item a {
