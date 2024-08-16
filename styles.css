@@ -38,7 +38,7 @@ body {
     margin: 0 auto; /* Center container */
     max-width: 100%; /* Ensure container takes full width minus padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 0;
     text-align: center;
 }
 
@@ -59,6 +59,14 @@ h3 {
     font-size: 1.4em;
     color: #0056b3;
     margin: 20px 0;
+}
+
+.header-banner h1 {
+    color: #ffffff; /* White color for the main title */
+}
+
+.header-banner h2 {
+    color: #e0e0e0; /* Light gray color for the subtitle */
 }
 
 /* Paragraphs */
