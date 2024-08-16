@@ -39,6 +39,7 @@ body {
     position: sticky; /* Stick to the top of the viewport */
     top: 0; /* Stick to the top */
     z-index: 1000; /* Ensure it stays on top of other content */
+    width: 100%;
 }
 
 /* Navbar Links */
