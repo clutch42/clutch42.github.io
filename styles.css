@@ -24,6 +24,35 @@ body {
     font-weight: bold;
 }
 
+/* Navigation Container */
+.nav-container {
+    position: relative; /* Make it relative to manage sticky behavior */
+    width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff; /* Background color of the navbar */
+    border-bottom: 1px solid #ddd; /* Border to separate navbar from content */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center; /* Center align text in navbar */
+    position: sticky; /* Stick to the top of the viewport */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* Navbar Links */
+.navbar a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 0 15px; /* Space between links */
+    font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 /* Margin Container Styles */
 .margin-container {
     position: relative;
