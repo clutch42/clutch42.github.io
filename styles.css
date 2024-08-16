@@ -43,6 +43,14 @@ body {
     width: 100%;
 }
 
+.navbar-list {
+    display: flex; /* Use Flexbox to arrange items in a row */
+    justify-content: space-around; /* Adjust spacing between items */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
 /* Navbar Links 
 .navbar a {
     color: #007bff;
