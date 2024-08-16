@@ -170,4 +170,11 @@ iframe.pdf {
     .margin-container {
         padding: 0; /* Remove padding on both sides */
     }
+    .navbar-list {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .navbar-item {
+        margin-bottom: 10px; /* Add spacing between items */
+    }
 }
