@@ -31,7 +31,7 @@ body {
     background-color: #007bff; /* Blue background for side margins */
 }
 
-/* Navigation Bar
+/* Navigation Bar */
 .navbar {
     background-color: #333;
     border-bottom: 1px solid #ddd;
@@ -41,7 +41,7 @@ body {
     top: 0; 
     z-index: 1000;
     width: 100%;
-}*/
+}
 
 /* Navbar Links 
 .navbar a {
@@ -55,43 +55,8 @@ body {
     text-decoration: underline;
 }*/
 
-/* Navbar Specific Overrides */
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 
-.navbar .navbar-list {
-    display: flex; /* Use Flexbox to arrange items in a row */
-    justify-content: space-around; /* Adjust spacing between items */
-    align-items: center;
-    /*list-style: none;  Remove default list styling */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    width: auto; /* Allow width to fit content */
-    max-width: none; /* Remove max-width restriction */
-}
 
-.navbar .navbar-list li {
-    margin: 0; /* Remove margin from list items */
-    padding: 0; /* Remove padding from list items */
-}
-
-.navbar .navbar-item {
-    color: white; /* Set text color */
-    text-decoration: none; /* Remove underline */
-    padding: 14px 20px; /* Adjust padding */
-    line-height: 22px; /* Adjust line-height */
-}
-
-.navbar .navbar-item:hover {
-    color: #ffcc00; /* Change text color on hover */
-}
-/*
 .navbar-item {
     flex: none; 
 }
@@ -105,7 +70,7 @@ body {
 
 .navbar-item a:hover {
     color: #ffcc00;
-}*/
+}
 
 
 /* Content Styles */
