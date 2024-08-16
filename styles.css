@@ -151,3 +151,9 @@ iframe.pdf {
     width: 100%; /* Make the PDF iframe take the full width of its container */
     height: 600px; /* Adjust height as needed */
 }
+
+@media (max-width: 768px) {
+            .margin-container {
+                padding: 0; /* Remove padding on both sides */
+            }
+        }
