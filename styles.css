@@ -27,6 +27,7 @@ body {
 /* Navigation Container */
 .nav-container {
     width: 100%;
+    position: relative;
 }
 
 /* Navigation Bar */
@@ -65,11 +66,12 @@ body {
 .container {
     padding: 20px;
     background-color: #fff; /* White background for the content */
-    margin: 0 auto; /* Center container */
+    margin: 20px auto 0; /* Center container */
     max-width: 100%; /* Ensure container takes full width minus padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0;
     text-align: center;
+    
 }
 
 /* Headings */
