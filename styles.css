@@ -127,6 +127,10 @@ p, li {
     margin-bottom: 20px;
 }
 
+.navbar-item li {
+    margin-bottom: 0;
+}
+
 /* Paragraphs and Lists */
 .container p, .container ul {
     text-align: left; /* Left-align text in paragraphs and lists */
