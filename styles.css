@@ -65,6 +65,7 @@ body {
 .navbar-list {
     display: flex; /* Use Flexbox to arrange items in a row */
     justify-content: space-around; /* Adjust spacing between items */
+    align-items: center;
     list-style: none; /* Remove default list styling */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -82,7 +83,7 @@ body {
 }
 
 .navbar-item a:hover {
-    background-color: #575757; /* Change background on hover */
+    color: #ffcc00;
 }
 
 
