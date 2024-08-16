@@ -61,7 +61,7 @@ body {
 
 .navbar-item {
     margin: 0;
-    flex: none; 
+    flex: 1; 
 }
 
 .navbar-item a {
@@ -69,6 +69,7 @@ body {
     color: white; 
     text-decoration: none; 
     padding: 14px 20px; 
+    text-align: center;
 }
 
 .navbar-item a:hover {
