@@ -61,11 +61,11 @@ h3 {
     margin: 20px 0;
 }
 
-.header-banner h1 {
+.title-banner h1 {
     color: #ffffff; /* White color for the main title */
 }
 
-.header-banner h2 {
+.title-banner h2 {
     color: #e0e0e0; /* Light gray color for the subtitle */
 }
 
