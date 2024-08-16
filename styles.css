@@ -66,7 +66,7 @@ body {
 .container {
     padding: 20px;
     background-color: #fff; /* White background for the content */
-    margin: 20px auto 0; /* Center container */
+    margin: 0 auto; /* Center container */
     max-width: 100%; /* Ensure container takes full width minus padding */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0;
