@@ -70,6 +70,7 @@ body {
     text-decoration: none; 
     padding: 14px 10px; 
     text-align: center;
+    font-size: 14px;
 }
 
 .navbar-item a:hover {
