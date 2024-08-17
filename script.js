@@ -17,3 +17,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.querySelectorAll('.secondary-navbar-item a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor click behavior
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const navbarHeight = document.querySelector('.secondary-navbar').offsetHeight;
+            window.scrollTo({
+                top: targetElement.offsetTop - navbarHeight,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+window.addEventListener('resize', function() {
+    document.querySelectorAll('.secondary-navbar-item a').forEach(anchor => {
+        anchor.dispatchEvent(new Event('click'));
+    });
+});
