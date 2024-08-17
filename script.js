@@ -25,7 +25,7 @@ document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
         const targetElement = document.getElementById(targetId); // Find target element
 
         if (targetElement) {
-            const primaryNavbarHeight = document.querySelector('.navbar').offsetHeight || 0; // Height of primary navbar
+            //const primaryNavbarHeight = document.querySelector('.navbar').offsetHeight || 0; // Height of primary navbar
             const secondaryNavbarHeight = document.querySelector('.navbar-list2').offsetHeight || 0; // Height of secondary navbar
             const totalNavbarHeight = primaryNavbarHeight + secondaryNavbarHeight; // Total height to offset
 
