@@ -76,6 +76,11 @@ body {
     color: #ffcc00;
 }
 
+/* Active link style */
+.navbar-item a.active {
+    color: #ffcc00; /* Change to your desired color */
+    font-weight: bold; /* Optional: make it bold */
+}
 
 /* Content Styles */
 .container {
