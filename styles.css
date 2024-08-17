@@ -59,6 +59,15 @@ body {
     padding: 0; /* Remove default padding */
 }
 
+.navbar-list2 {
+    background-color: #0056b3;
+    display: flex; /* Use Flexbox to arrange items in a row */
+    justify-content: space-around; /* Adjust spacing between items */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
 .navbar-item {
     margin: 0;
     flex: 1; 
