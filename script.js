@@ -18,21 +18,26 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.querySelectorAll('.secondary-navbar-item a').forEach(anchor => {
+document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault(); // Prevent default anchor click behavior
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+        const targetId = this.getAttribute('href').substring(1); // Get target ID
+        const targetElement = document.getElementById(targetId); // Find target element
 
         if (targetElement) {
-            const navbarHeight = document.querySelector('.secondary-navbar').offsetHeight;
+            const primaryNavbarHeight = document.querySelector('.navbar').offsetHeight || 0; // Height of primary navbar
+            const secondaryNavbarHeight = document.querySelector('.navbar-list2').offsetHeight || 0; // Height of secondary navbar
+            const totalNavbarHeight = primaryNavbarHeight + secondaryNavbarHeight; // Total height to offset
+
+            // Smooth scrolling to the target element
             window.scrollTo({
-                top: targetElement.offsetTop - navbarHeight,
+                top: targetElement.offsetTop - totalNavbarHeight,
                 behavior: 'smooth'
             });
         }
     });
 });
+
 
 window.addEventListener('resize', function() {
     document.querySelectorAll('.secondary-navbar-item a').forEach(anchor => {
