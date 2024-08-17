@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Get the current page URL
     var currentPage = window.location.pathname.split("/").pop();
+
+    // Default to 'index.html' if no specific page is found (useful for homepage)
+    if (currentPage === '') {
+        currentPage = 'index.html';
+    }
     
     // Get all navigation links
     var navLinks = document.querySelectorAll(".navbar-item a");
