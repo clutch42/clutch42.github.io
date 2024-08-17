@@ -25,22 +25,21 @@ document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
         const targetElement = document.getElementById(targetId); // Find target element
 
         if (targetElement) {
-            const primaryNavbarHeight = document.querySelector('.navbar').offsetHeight || 0; // Height of primary navbar
-            const secondaryNavbarHeight = document.querySelector('.navbar-list2').offsetHeight || 0; // Height of secondary navbar
-            const totalNavbarHeight = primaryNavbarHeight + secondaryNavbarHeight; // Total height to offset
+            // Get the height of the navbar
+            const navbarHeight = document.querySelector('.navbar').offsetHeight || 0; 
 
             // Smooth scrolling to the target element
             window.scrollTo({
-                top: targetElement.offsetTop - totalNavbarHeight,
+                top: targetElement.offsetTop - navbarHeight, // Adjust scroll position
                 behavior: 'smooth'
             });
         }
     });
 });
 
-
+// Optional: Adjust on window resize if the height of the navbar changes
 window.addEventListener('resize', function() {
-    document.querySelectorAll('.secondary-navbar-item a').forEach(anchor => {
+    document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
         anchor.dispatchEvent(new Event('click'));
     });
 });
