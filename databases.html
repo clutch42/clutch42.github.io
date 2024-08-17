@@ -19,23 +19,29 @@
                 <li class="navbar-item"><a href="algorithms-and-data-structures.html">Algorithms and Data Structures</a></li>
                 <li class="navbar-item"><a href="databases.html">Databases</a></li>
             </ul>    
+            <ul class="navbar-list2">
+                <li class="navbar-item"><a href="#review">Code Review</a></li>
+                <li class="navbar-item"><a href="#versions">Versions</a></li>
+                <li class="navbar-item"><a href="#summary">Summary</a></li>
+                <li class="navbar-item"><a href="#narrative">Narrative</a></li>
+            </ul>
         </nav>
         <div class="container">
             <h1>Databases</h1>
             
-            <h2>Code Review: Databases - SQLite in C++</h2>
+            <h2 id="review">Code Review: Databases - SQLite in C++</h2>
             <p>This section provides a code review of the SQL injection prevention project in C++ with SQLite. The review evaluates the implementation of query 
                 validation and identifies opportunities for enhancing security through parameterized queries and logging. Watch the video below for an in-depth 
                 analysis of the code’s approach to handling SQL injection and its overall effectiveness.</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FwYsATmVzxY?start=2165" frameborder="0" allowfullscreen></iframe>
             
-            <h2>Before and After: Enhancements to the Code</h2>
+            <h2 id="versions">Before and After: Enhancements to the Code</h2>
             <p>Hightlights the key improvements made to the project by comparing the initial and enhanced versions. The links below provide access to the original 
                 code and the updated version using parameterization and logging.</p>
             <a href="https://github.com/clutch42/CS-499-Capstone/tree/main/SQLInjection" target="_blank" class="button">SQL Injection Database Original</a>
             <a href="https://github.com/clutch42/CS-499-Capstone/tree/main/SQLInjection_Enhanced" target="_blank" class="button">SQL Injection Database - Enhanced</a>
             
-            <h2>Project Narrative: Enhancing Security</h2>
+            <h2 id="summary">Project Narrative: Enhancing Security</h2>
             <p><strong>Artifact Description:</strong> This project from CS-405 Secure Coding, completed in summer 2024, addresses SQL injection vulnerabilities in a C++ 
                 program using SQLite. The initial version of the project used keyword detection to identify potential SQL injection attacks, focusing on flagging specific keywords.</p>
             <p><strong>Justification for Inclusion:</strong>  This project is included in my ePortfolio to demonstrate the application of secure coding principles in database 
@@ -62,7 +68,7 @@
                 Implementing parameterized queries was straightforward, but adding a logging database introduced complexity. Despite concerns about overhead, detailed transaction logs proved 
                 valuable for security and monitoring. This process improved system security and expanded my knowledge of SQLite.</p>
 
-            <iframe src="CS-499-Database-Narrative.pdf" class="pdf"></iframe>
+            <iframe src="CS-499-Database-Narrative.pdf" class="pdf" id="narrative"></iframe>
             
             <a href="index.html" class="button">Back to Home</a>
         </div>
