@@ -27,7 +27,7 @@ document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
         if (targetElement) {
             const primaryNavbarHeight = document.querySelector('.navbar').offsetHeight || 0; // Height of primary navbar
             const secondaryNavbarHeight = document.querySelector('.navbar-list2').offsetHeight || 0; // Height of secondary navbar
-            const totalNavbarHeight = secondaryNavbarHeight; // Total height to offset
+            const totalNavbarHeight = primaryNavbarHeight + secondaryNavbarHeight; // Total height to offset
 
             // Smooth scrolling to the target element
             window.scrollTo({
