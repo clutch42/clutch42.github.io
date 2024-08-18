@@ -17,7 +17,7 @@ p, li {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #e9ecef; /* Light gray background for the whole page */
+    background-color: #e9ecef; 
     color: #333;
     padding: 0;
     margin: 0;
@@ -35,8 +35,8 @@ body {
 /* Margin Container Styles */
 .margin-container {
     position: relative;
-    padding: 0 20%; /* Padding on both sides to create space */
-    background-color: #007bff; /* Blue background for side margins */
+    padding: 0 20%; 
+    background-color: #007bff; 
 }
 
 /* Navigation Bar */
@@ -52,20 +52,20 @@ body {
 }
 
 .navbar-list {
-    display: flex; /* Use Flexbox to arrange items in a row */
-    justify-content: space-around; /* Adjust spacing between items */
-    list-style: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    display: flex; 
+    justify-content: space-around; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .navbar-list2 {
     background-color: #0056b3;
-    display: flex; /* Use Flexbox to arrange items in a row */
-    justify-content: space-around; /* Adjust spacing between items */
-    list-style: none; /* Remove default list styling */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    display: flex; 
+    justify-content: space-around; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .navbar-item {
@@ -88,16 +88,16 @@ body {
 
 /* Active link style */
 .navbar-item a.active {
-    color: #ffcc00; /* Change to your desired color */
-    font-weight: bold; /* Optional: make it bold */
+    color: #ffcc00; 
+    font-weight: bold; 
 }
 
 /* Content Styles */
 .container {
     padding: 20px;
-    background-color: #fff; /* White background for the content */
-    margin: 0 auto; /* Center container */
-    max-width: 100%; /* Ensure container takes full width minus padding */
+    background-color: #fff; 
+    margin: 0 auto; 
+    max-width: 100%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0;
     text-align: center;
@@ -133,18 +133,18 @@ h3 {
 
 /* Paragraphs and Lists */
 .container p, .container ul {
-    text-align: left; /* Left-align text in paragraphs and lists */
-    margin: 0 auto 20px; /* Center the block element itself */
-    width: 100%; /* Full width of container */
-    max-width: 800px; /* Adjust as needed */
+    text-align: left; 
+    margin: 0 auto 20px; 
+    width: 100%; 
+    max-width: 800px; 
 }
 
 .container ul {
-    padding-left: 20px; /* Indent list items */
+    padding-left: 20px; 
 }
 
 .container li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px; 
 }
 
 /* Button Styles */
@@ -171,25 +171,26 @@ h3 {
 iframe {
     display: block;
     border: none;
-    max-width: 100%; /* Ensure iframes don’t exceed container width */
+    max-width: 100%; 
     margin: 20px auto;
 }
 
 /* Specific iframe for PDF */
 iframe.pdf {
-    width: 100%; /* Make the PDF iframe take the full width of its container */
-    height: 600px; /* Adjust height as needed */
+    width: 100%; 
+    height: 600px; 
 }
 
+/* Small Screens */
 @media (max-width: 768px) {
     .margin-container {
-        padding: 0; /* Remove padding on both sides */
+        padding: 0; 
     }
     .navbar-list {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
     }
 
     .navbar-item {
-        margin-bottom: 10px; /* Add spacing between items */
+        margin-bottom: 10px; 
     }
 }
