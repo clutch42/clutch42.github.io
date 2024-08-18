@@ -1,3 +1,4 @@
+// for highlighting active page in nav bar
 document.addEventListener("DOMContentLoaded", function() {
     // Get the current page URL
     var currentPage = window.location.pathname.split("/").pop();
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// offset so nav bar doesn't hide top of content
 document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault(); // Prevent default anchor click behavior
@@ -37,7 +39,7 @@ document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
     });
 });
 
-// Optional: Adjust on window resize if the height of the navbar changes
+// Adjust on window resize if the height of the navbar changes
 window.addEventListener('resize', function() {
     document.querySelectorAll('.navbar-list2 a').forEach(anchor => {
         anchor.dispatchEvent(new Event('click'));
