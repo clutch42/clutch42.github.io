@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            color: #343a40;
+        }
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+        }
+        .countdown {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Redirecting to My New Site!</h1>
+    <p>We’ve moved to a new location. You’ll be automatically redirected in <span id="countdown" class="countdown">5</span> seconds.</p>
+    <p>If you are not redirected, <a href="https://thebrianengel.com">click here</a>.</p>
+</div>
+
+<script>
+    let countdownElement = document.getElementById("countdown");
+    let countdown = 5;
+
+    function updateCountdown() {
+        countdownElement.textContent = countdown;
+        if (countdown === 0) {
+            window.location.href = "https://thebrianengel.com";  // Replace with your new site URL
+        } else {
+            countdown--;
+        }
+    }
+
+    setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
